@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: #f5f6fa;
+  width: 100%;
+  height: 100vh;
+  
+}
+.app{
+  display: flex;
+  justify-content: space-around;
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.app-header{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.app_stats{
+  display: flex;
+  justify-content: space-evenly;
+}
+.infoBox{
+  flex: 1;
+  cursor: pointer;
+}
+.infoBox:not(:last-child){
+  margin-right: 15px;
+}
+.infoBox-green{
+  border-top: 10px solid greenyellow;
+}
+.infoBox-red{
+  border-top:10px solid red;
+}
+.infoBox-cases-green{
+color: lightgreen !important;   
+}
+.app-left{
+  width: 800px;
+}
+.app-right{
+  display: flex;
+  flex-direction: column;
+}
+.app-right .MuiCardContent-root{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+}
+.app-graph{
+  flex-grow: 1;
+}
+.app-graph-title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cases{
+  padding: 20px;
+   
+}
+.table{
+  margin-top: 20px;
+  overflow-y: scroll;
+  overflow-y: scroll;
+  height: 400px;
+}
+.table tr:nth-of-type(odd){
+  background-color: #f3f2f8;
+}
+.table td{
+  padding: 0.5rem;
+}
+.table tr{
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoBox_cases{
+  color: #cc1034;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+
+}
+.infoBox_total{
+  color: #6c757d;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
+
+}
+
+
+
+@media (max-width:990px){
+  .app{
+    flex-direction: column;
+    
+  }
+  .app-left{
+    width: 600px;
+
+  }
+  .cases{
+    width: 600px;
+  }
+}
+
+
+
+
+
+/* .app_stats{
+  display: flex;
+  justify-content: space-between;
+} */
